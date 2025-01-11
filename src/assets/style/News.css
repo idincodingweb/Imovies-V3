@@ -1,0 +1,138 @@
+/* News.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #000; /* Background hitam */
+  color: #fff; /* Warna teks putih */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #ffffff1e; /* Background hitam untuk card */
+  color: #fff; /* Warna teks putih untuk card */
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.text-danger {
+  color: #ff0000 !important; /* Warna merah untuk teks besar seperti <h2> */
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.fixed-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+
+.btn-danger {
+  background-color: #ff0000;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #cc0000;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+}
+
+.card-footer {
+  background-color: #222; /* Background hitam untuk footer card */
+  color: #fff; /* Warna teks putih untuk footer card */
+  border-top: 1px solid #444; /* Border atas footer card */
+  padding: 10px 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.gap-2 {
+  gap: 10px;
+}
+
+.gap-3 {
+  gap: 15px;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-200 {
+  width: 100%;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.position-relative {
+  position: relative;
+}

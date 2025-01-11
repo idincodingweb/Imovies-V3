@@ -1,0 +1,253 @@
+/* SearchPage.css */
+
+/* Mengatur gaya dasar untuk halaman pencarian */
+.search-page {
+  background-color: #000; /* Background hitam */
+  color: #fff; /* Warna teks putih */
+  min-height: 100vh;
+}
+
+/* Mengatur header pencarian */
+.search-header {
+  background-color: #1c1c1c; /* Background hitam gelap */
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.search-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-header-content {
+  width: 100%;
+}
+
+.search-title-section {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.search-title-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.search-info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.query-text {
+  font-weight: bold;
+}
+
+.search-form .input-group {
+  display: flex;
+  justify-content: center;
+}
+
+.search-form .form-control {
+  background-color: #333;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-form .btn {
+  background-color: #ff0000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-form .btn i {
+  margin-right: 5px;
+}
+
+.search-form .btn:hover {
+  background-color: #cc0000;
+}
+
+/* Mengatur kontainer hasil pencarian */
+.search-results-container .container {
+  padding-top: 20px;
+}
+
+.loading-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.loading-text {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie-list-item {
+  background-color: #222; /* Background hitam untuk item film */
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: calc(33.333% - 20px);
+  cursor: pointer;
+  position: relative; /* Menambahkan posisi relatif */
+  transition: transform 0.3s ease;
+}
+
+.movie-list-item:hover {
+  transform: scale(1.05);
+}
+
+.movie-info-section {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.movie-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #bbb;
+}
+
+.movie-overview {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-top: 10px;
+}
+
+/* Mengatur posisi tetap untuk tombol play */
+.play-btn {
+  position: absolute; /* Mengatur posisi absolut */
+  bottom: 15px; /* Menempatkan tombol 15px dari bawah */
+  left: 15px; /* Menempatkan tombol 15px dari kiri */
+  background-color: #ff0000;
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  background-color: #cc0000;
+}
+
+.movie-poster-section {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-top: 1px solid #444;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #444;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Mengatur pagination */
+.pagination-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-item .page-link {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page-item .page-link:hover {
+  background-color: #ff0000;
+}
+
+.page-item.active .page-link {
+  background-color: #ff0000;
+  cursor: default;
+}
+
+.page-item.disabled .page-link {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+/* Mengatur tampilan saat tidak ada hasil pencarian */
+.no-results {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.no-results-content {
+  color: #bbb;
+}
+
+.no-results-content i {
+  color: #ff0000;
+}
+
+.no-results-content h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.no-results-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.no-results-content .btn {
+  background-color: #ff0000;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.no-results-content .btn:hover {
+  background-color: #cc0000;
+}

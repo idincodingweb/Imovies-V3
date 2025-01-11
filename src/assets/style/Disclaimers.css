@@ -1,0 +1,93 @@
+/* Disclaimers.css */
+
+/* Base styles for the disclaimers page */
+.bg-dark {
+  background-color: #000 !important; /* Background hitam */
+}
+
+.min-vh-100 {
+  min-height: 100vh; /* Tinggi minimum 100vh */
+}
+
+.text-white {
+  color: #fff !important; /* Warna teks putih */
+}
+
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem !important; /* Border radius besar */
+}
+
+.shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1) !important; /* Shadow */
+}
+
+.p-4 {
+  padding: 1.5rem !important;
+}
+
+.text-danger {
+  color: #ff0000 !important; /* Warna teks merah */
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important; /* Background terang */
+}
+
+.text-light {
+  color: #adb5bd !important; /* Warna teks terang */
+}
+
+.hover\:bg-light:hover {
+  background-color: #f8f9fa !important; /* Background terang saat hover */
+}
+
+.transition-all {
+  transition: all 0.3s ease !important; /* Transisi semua properti */
+}
+
+.duration-300 {
+  transition-duration: 0.3s !important; /* Durasi transisi 300ms */
+}
+
+.bg-danger {
+  background-color: #dc3545 !important; /* Background merah */
+}
+
+.border-danger {
+  border-color: #dc3545 !important; /* Warna border merah */
+}
+
+.text-warning {
+  color: #ffc107 !important; /* Warna teks kuning */
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.mr-2 {
+  margin-right: 0.5rem !important;
+}

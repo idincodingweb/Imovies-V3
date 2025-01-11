@@ -1,0 +1,282 @@
+/* About.css */
+
+.about-min-vh-100 {
+  min-height: 100vh;
+}
+
+.about-text-white {
+  color: #fff !important;
+}
+
+.about-container-fluid {
+  padding: 20px;
+}
+
+.about-py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.about-mb-5 {
+  margin-bottom: 3rem;
+}
+
+.about-text-center {
+  text-align: center !important;
+}
+
+.about-text-md-start {
+  text-align: left !important;
+}
+
+.about-position-relative {
+  position: relative;
+}
+
+.about-rounded-circle {
+  border-radius: 50% !important;
+}
+
+.about-border {
+  border: 1px solid #dee2e6 !important;
+}
+
+.about-border-4 {
+  border-width: 4px !important;
+}
+
+.about-border-danger {
+  border-color: #dc3545 !important;
+}
+
+.about-mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.about-w-100 {
+  width: 100% !important;
+}
+
+.about-h-100 {
+  height: 100% !important;
+}
+
+.about-object-fit-cover {
+  object-fit: cover !important;
+}
+
+.about-fw-bold {
+  font-weight: 700 !important;
+}
+
+.about-bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.about-px-4 {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.about-py-2 {
+  padding-top: 0.5rem !importan;
+  padding-bottom: 0.5rem !important;
+}
+
+.about-rounded-pill {
+  border-radius: 50rem !important;
+}
+
+.about-display-4 {
+  font-size: 2.5rem;
+}
+
+.about-lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.about-d-flex {
+  display: flex !important;
+}
+
+.about-gap-3 {
+  gap: 1rem !important;
+}
+
+.about-justify-content-center {
+  justify-content: center !important;
+}
+
+.about-justify-content-md-start {
+  justify-content: flex-start !important;
+}
+
+.about-btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.about-btn-dark {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.about-btn-dark:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+.about-hover-danger:hover {
+  color: #dc3545 !important;
+}
+
+.about-hover-danger-bg:hover {
+  background-color: #dc3545 !important;
+}
+
+.about-bg-black {
+  background-color: #000 !important;
+}
+
+.about-rounded {
+  border-radius: 0.25rem !important;
+}
+
+.about-p-4 {
+  padding: 1.5rem !important;
+}
+
+.about-mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.about-overflow-auto {
+  overflow: auto !important;
+}
+
+.about-text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.about-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.about-g-4 {
+  gap: 1.5rem !important;
+}
+
+.about-col-md-4,
+.about-col-md-8,
+.about-col-md-3,
+.about-col-sm-6 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .about-col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .about-col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .about-col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 576px) {
+  .about-col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.about-border-start {
+  border-left: 1px solid #dee2e6 !important;
+}
+
+.about-ps-4 {
+  padding-left: 1.5rem !important;
+}
+
+.about-text-danger {
+  color: #dc3545 !important;
+}
+
+.about-text-secondary {
+  color: #6c757d !important;
+}
+
+.about-h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.about-position-absolute {
+  position: absolute !important;
+}
+
+.about-start-0 {
+  left: 0 !important;
+}
+
+.about-end-0 {
+  right: 0 !important;
+}
+
+.about-bottom-0 {
+  bottom: 0 !important;
+}
+
+.about-overflow-hidden {
+  overflow: hidden !important;
+}
+
+.about-team-card {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.about-team-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.about-team-social {
+  background-color: #343a40;
+  padding: 1rem;
+}
+
+.about-team-social a {
+  color: #fff;
+  transition: color 0.15s ease-in-out;
+}
+
+.about-team-social a:hover {
+  color: #dc3545;
+}
