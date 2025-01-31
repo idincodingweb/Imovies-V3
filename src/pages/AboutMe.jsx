@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import Images from '../assets/images/cuyprof.jpg';
+import '../assets/style/About.css';
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('skills');
