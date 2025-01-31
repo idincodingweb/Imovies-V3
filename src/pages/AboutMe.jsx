@@ -157,38 +157,6 @@ const teamMembers = [
           </div>
         </div>
 
-        {/* Our Team Section */}
-        <div className="about-text-center about-mb-5">
-          <h2 className="about-display-4 about-fw-bold about-mb-5 about-text-white">
-            Our <span className="about-text-danger">Team</span>
-          </h2>
-          <div className="about-row about-g-4">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="about-col-md-3 about-col-sm-6">
-                <div className="about-team-card about-bg-black about-p-4 about-rounded about-h-100 about-position-relative about-overflow-hidden">
-                  <div className="about-team-image-wrapper about-mb-4">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="about-rounded-circle about-team-image"
-                      style={{ width: '150px', height: '150px', objectFit: 'cover' }}
-                    />
-                  </div>
-                  <div className="about-member-team">
-                    <h3 className="about-h5 about-mb-6">{member.name}</h3>
-                  </div>
-                  <div className="about-team-social about-start-0 about-end-0 about-bottom-0 about-p-3 about-bg-dark">
-                    <div className="about-d-flex about-justify-content-center about-gap-3">
-                      <a href="#" className="about-text-white"><Github size={20} /></a>
-                      <a href="#" className="about-text-white"><Linkedin size={20} /></a>
-                      <a href="#" className="about-text-white"><Mail size={20} /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );
