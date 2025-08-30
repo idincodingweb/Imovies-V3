@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
-import Images from '../assets/images/Picsart_25-04-02_07-18-49-024(1).jpg';
+import Images from '../assets/images/Picsart_25-08-30_06-54-39-854.jpg';
 import '../assets/style/About.css';
 
 const About = () => {
