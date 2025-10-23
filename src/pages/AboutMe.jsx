@@ -1,7 +1,7 @@
 import { useState } from 'react';
 // Menambahkan ikon baru untuk bagian baru
 import { Github, Linkedin, Mail, Twitter, Users, Code, Tv } from 'lucide-react';
-import Images from '../assets/images/Picsart_25-08-30_06-54-39-854.jpg';
+import Images from 'https://raw.githubusercontent.com/idincodingweb/Imovies-V3/refs/heads/main/src/assets/images/IMG_20251023_170628.jpg';
 import '../assets/style/About.css';
 
 const About = () => {
@@ -40,7 +40,7 @@ const About = () => {
       {
         year: "2023 - Present",
         degree: "Student Developer",
-        school: "UNIVERSITAS PASUNDAN BANDUNG (UNPAS) (Self-Taught Division)" // Memakai nama proyek Anda
+        school: "UNIVERSITAS PASUNDAN BANDUNG (UNPAS) (Self-Taught Division)" 
       }
     ]
   };
