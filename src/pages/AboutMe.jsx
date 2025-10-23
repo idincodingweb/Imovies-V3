@@ -1,37 +1,51 @@
 import { useState } from 'react';
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+// Menambahkan ikon baru untuk bagian baru
+import { Github, Linkedin, Mail, Twitter, Users, Code, Tv } from 'lucide-react';
 import Images from '../assets/images/Picsart_25-08-30_06-54-39-854.jpg';
 import '../assets/style/About.css';
 
 const About = () => {
+  // Mengganti 'experience' menjadi 'projects'
   const [activeTab, setActiveTab] = useState('skills');
 
+  // --- DATA PROFIL YANG DIPERSONALISASI ---
+  // Saya sesuaikan data ini agar lebih relevan dengan Anda
+  // (17 tahun, developer, content creator, dan proyek UKG)
   const profile = {
     name: "Idin Iskandar",
-    role: "Full Stack Developer",
-    bio: "Passionate developer with a keen interest in creating beautiful and functional web applications. Always learning and exploring new technologies.",
-    skills: ["React", "Node.js", "JavaScript", "TypeScript", "Bootstrap", "MongoDB"],
-    experience: [
+    role: "React Developer & Content Creator",
+    bio: "Passionate 17-year-old developer from Indonesia. Loves building cool web apps with React and creating content for YouTube. This iMovies project is my latest creation!",
+    skills: ["React", "JavaScript", "Firebase", "Node.js", "PHP", "TMDB API", "CSS", "Bootstrap"],
+    projects: [ // Mengganti 'experience' menjadi 'projects'
       {
-        year: "2022 - Present",
-        position: "Senior Developer",
-        company: "Tech Company"
+        year: "2025",
+        title: "iMovies Web App",
+        stack: "React, Firebase Auth, TMDB API",
+        description: "A functional movie database website with user authentication."
       },
       {
-        year: "2020 - 2022",
-        position: "Web Developer",
-        company: "StartUp Inc"
+        year: "2025",
+        title: "UNIVERSITAS KOMPUTER GABUT (UKG)",
+        stack: "PHP, MySQL (Local Database)",
+        description: "Fictional school website project for learning backend development."
+      },
+       {
+        year: "2025 - Present",
+        title: "YouTube Content Creator",
+        stack: "Video Editing, Scripting",
+        description: "Creating content about gaming and web development."
       }
     ],
     education: [
       {
-        year: "2016 - 2020",
-        degree: "Computer Science",
-        school: "UNIKOM (UNIVERSITAS KOMEDI)"
+        year: "2023 - Present",
+        degree: "Student Developer",
+        school: "UNIVERSITAS KOMPUTER GABUT (UKG) (Self-Taught Division)" // Memakai nama proyek Anda
       }
     ]
   };
 
+// Data team (dari kode Anda, tidak diubah)
 const teamMembers = [
   {
     name: "Sulqime Shima",
@@ -55,10 +69,19 @@ const teamMembers = [
   }
 ];
 
+  // Mengubah <button> sosial media menjadi <a> (link)
+  const socialLinks = [
+    { icon: <Github size={24} />, href: "https://github.com/idincodingweb" }, // Ganti dengan link Anda
+    { icon: <Linkedin size={24} />, href: "#" }, // Ganti dengan link Anda
+    { icon: <Twitter size={24} />, href: "#" }, // Ganti dengan link Anda
+    { icon: <Mail size={24} />, href: "mailto:emailanda@gmail.com" }, // Ganti dengan email Anda
+  ];
+
   return (
     <div className="about-min-vh-100 about-text-white">
-      <div className="about-container-fluid about-py-5">
-        {/* Hero Section */}
+      <div className="about-container about-py-5 px-3"> {/* Mengganti container-fluid menjadi container biasa */}
+        
+        {/* Hero Section (Sama seperti sebelumnya, hanya mengganti button ke a) */}
         <div className="about-row about-align-items-center about-mb-5">
           <div className="about-col-md-4 about-text-center">
             <div className="about-position-relative about-mb-5">
@@ -86,26 +109,25 @@ const teamMembers = [
             </h1>
             <p className="about-lead about-mb-4">{profile.bio}</p>
             <div className="about-d-flex about-gap-3 about-justify-content-center about-justify-content-md-start">
-              <button className="about-btn about-btn-dark about-rounded-circle about-p-2 about-d-flex about-align-items-center about-hover-danger">
-                <Github size={24} />
-              </button>
-              <button className="about-btn about-btn-dark about-rounded-circle about-p-2 about-d-flex about-align-items-center about-hover-danger">
-                <Linkedin size={24} />
-              </button>
-              <button className="about-btn about-btn-dark about-rounded-circle about-p-2 about-d-flex about-align-items-center about-hover-danger">
-                <Twitter size={24} />
-              </button>
-              <button className="about-btn about-btn-dark about-rounded-circle about-p-2 about-d-flex about-align-items-center about-hover-danger">
-                <Mail size={24} />
-              </button>
+              {socialLinks.map((link, index) => (
+                <a 
+                  key={index}
+                  href={link.href}
+                  target="_blank" // Buka di tab baru
+                  rel="noopener noreferrer" // Keamanan
+                  className="about-btn about-btn-dark about-rounded-circle about-p-2 about-d-flex about-align-items-center about-hover-danger"
+                  >
+                  {link.icon}
+                </a>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Tabs Section */}
+        {/* Tabs Section (Mengganti 'experience' ke 'projects') */}
         <div className="about-bg-black about-rounded about-p-4 about-mb-5">
           <div className="about-d-flex about-gap-3 about-mb-4 about-overflow-auto">
-            {['skills', 'experience', 'education'].map((tab) => (
+            {['skills', 'projects', 'education'].map((tab) => ( // Diubah
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
@@ -120,24 +142,23 @@ const teamMembers = [
 
           <div style={{ minHeight: '300px' }}>
             {activeTab === 'skills' && (
-              <div className="about-row about-g-4">
+              <div className="about-d-flex about-flex-wrap about-gap-3"> {/* Menggunakan flex-wrap dan gap */}
                 {profile.skills.map((skill) => (
-                  <div key={skill} className="about-col-md-4 about-col-sm-6">
-                    <div className="about-bg-dark about-p-3 about-rounded about-text-center about-hover-danger-bg about-transition">
-                      {skill}
-                    </div>
+                  <div key={skill} className="about-bg-dark about-rounded-pill about-px-4 about-py-2 about-fw-medium about-hover-danger-bg about-transition">
+                    {skill}
                   </div>
                 ))}
               </div>
             )}
 
-            {activeTab === 'experience' && (
+            {activeTab === 'projects' && ( // Diubah dari 'experience'
               <div className="about-d-flex about-flex-column about-gap-4">
-                {profile.experience.map((exp, index) => (
+                {profile.projects.map((project, index) => (
                   <div key={index} className="about-border-start about-border-4 about-border-danger about-ps-4">
-                    <p className="about-text-danger about-fw-bold about-mb-1">{exp.year}</p>
-                    <h3 className="about-h4 about-fw-bold about-mb-1">{exp.position}</h3>
-                    <p className="about-text-secondary about-mb-0">{exp.company}</p>
+                    <p className="about-text-danger about-fw-bold about-mb-1">{project.year}</p>
+                    <h3 className="about-h4 about-fw-bold about-mb-1">{project.title}</h3>
+                    <p className="about-text-secondary about-mb-1 fst-italic">{project.stack}</p>
+                    <p className="about-mb-0">{project.description}</p>
                   </div>
                 ))}
               </div>
@@ -154,6 +175,49 @@ const teamMembers = [
                 ))}
               </div>
             )}
+          </div>
+        </div>
+
+        {/* --- BAGIAN BARU: ABOUT THIS PROJECT --- */}
+        <div className="about-bg-black about-rounded about-p-4 about-mb-5">
+          <h2 className="about-fw-bold about-mb-4 about-d-flex about-align-items-center about-gap-2">
+            <Code size={28} className="about-text-danger" />
+            About This Project
+          </h2>
+          <p className="about-lead about-text-white-50">
+            iMovies is a personal project built to showcase skills in front-end development and API integration.
+            It's powered by modern technologies to deliver a fast, responsive, and engaging user experience.
+          </p>
+          <div className="about-d-flex about-flex-wrap about-gap-3">
+            {['React', 'Firebase Authentication', 'TMDB API', 'Vercel (Deployment)'].map((tech) => (
+              <div key={tech} className="about-bg-dark about-rounded-pill about-px-4 about-py-2 about-fw-medium">
+                {tech}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* --- BAGIAN BARU: MEET THE TEAM --- */}
+        {/* Bagian ini me-render array 'teamMembers' Anda */}
+        <div className="about-mb-5">
+          <h2 className="about-fw-bold about-mb-4 about-text-center">
+            <span className="about-text-danger">Meet</span> the (Fictional) Team
+          </h2>
+          <div className="about-row about-g-4">
+            {teamMembers.map((member) => (
+              <div key={member.name} className="about-col-lg-3 about-col-md-6">
+                <div className="about-bg-black about-rounded about-p-3 about-text-center about-h-100">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="about-rounded-circle about-object-fit-cover about-mb-3"
+                    style={{ width: '150px', height: '150px', border: '3px solid var(--bs-danger, #dc3545)' }} // Menggunakan variabel Bootstrap jika ada, atau fallback
+                  />
+                  <h5 className="about-fw-bold about-mb-1">{member.name}</h5>
+                  <p className="about-text-danger about-mb-0">{member.role}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
