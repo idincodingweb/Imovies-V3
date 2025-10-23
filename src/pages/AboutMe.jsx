@@ -50,22 +50,22 @@ const teamMembers = [
   {
     name: "Sulqime Shima",
     role: "Assistant Manager",
-    image: "https://raw.githubusercontent.com/idincodingweb/packgambar/refs/heads/main/netflic/_.sulqime._-20241230-0001.jpg",
+    image: "https://raw.githubusercontent.com/idincodingweb/Imovies-V3/refs/heads/main/src/assets/images/tim/7acf87c51e33a015e8dbd46b6019203d.jpg",
   },
   {
     name: "Friska J.",
     role: "UI/UX Designer",
-    image: "https://raw.githubusercontent.com/idincodingweb/packgambar/refs/heads/main/netflic/_prissqnq.q-20241230-0001.jpg"
+    image: "https://raw.githubusercontent.com/idincodingweb/Imovies-V3/refs/heads/main/src/assets/images/tim/706a293f58ad4c74836e50e8d14db399.jpg"
   },
   {
     name: "Aryu Yusmala",
     role: "DeployMent",
-    image: "https://raw.githubusercontent.com/idincodingweb/packgambar/refs/heads/main/netflic/_aryuuu_mn-20241230-0001.jpg"
+    image: "https://raw.githubusercontent.com/idincodingweb/Imovies-V3/refs/heads/main/src/assets/images/tim/642a0551b9ac12aae89e4f374366468e.jpg"
   },
   {
-    name: "Fika Iskandar",
+    name: "Fika Yulia",
     role: "Project Manager",
-    image: "https://raw.githubusercontent.com/idincodingweb/packgambar/refs/heads/main/netflic/fiqqbtt-20241230-0002.jpg"
+    image: "https://raw.githubusercontent.com/idincodingweb/Imovies-V3/refs/heads/main/src/assets/images/tim/3b4d6a55f8fac66aac518bca6e3cb2cd.jpg"
   }
 ];
 
