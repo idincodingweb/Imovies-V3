@@ -8,15 +8,15 @@ const About = () => {
   // Mengganti 'experience' menjadi 'projects'
   const [activeTab, setActiveTab] = useState('skills');
 
-  // --- DATA PROFIL YANG DIPERSONALISASI ---
-  // Saya sesuaikan data ini agar lebih relevan dengan Anda
-  // (17 tahun, developer, content creator, dan proyek UKG)
+  // --- DATA PROFIL ---
+  // Developer : IDIN ISKANDAR
+  // (27 tahun, developer, content creator, dan proyek UNPAS)
   const profile = {
-    name: "Idin Iskandar",
-    role: "React Developer & Content Creator",
-    bio: "Passionate 17-year-old developer from Indonesia. Loves building cool web apps with React and creating content for YouTube. This iMovies project is my latest creation!",
+    name: "Idin Iskandar, S.kom",
+    role: "Web Development",
+    bio: "Passionate 27-year-old developer from Indonesia. Loves building cool web apps with React and creating content for YouTube. This iMovies project is my latest creation!",
     skills: ["React", "JavaScript", "Firebase", "Node.js", "PHP", "TMDB API", "CSS", "Bootstrap"],
-    projects: [ // Mengganti 'experience' menjadi 'projects'
+    projects: [ 
       {
         year: "2025",
         title: "iMovies Web App",
@@ -25,7 +25,7 @@ const About = () => {
       },
       {
         year: "2025",
-        title: "UNIVERSITAS KOMPUTER GABUT (UKG)",
+        title: "UNIVERSITAS PASUNDAN BANDUNG (UNPAS)",
         stack: "PHP, MySQL (Local Database)",
         description: "Fictional school website project for learning backend development."
       },
@@ -40,7 +40,7 @@ const About = () => {
       {
         year: "2023 - Present",
         degree: "Student Developer",
-        school: "UNIVERSITAS KOMPUTER GABUT (UKG) (Self-Taught Division)" // Memakai nama proyek Anda
+        school: "UNIVERSITAS PASUNDAN BANDUNG (UNPAS) (Self-Taught Division)" // Memakai nama proyek Anda
       }
     ]
   };
@@ -69,7 +69,7 @@ const teamMembers = [
   }
 ];
 
-  // Mengubah <button> sosial media menjadi <a> (link)
+  // Social Media Link
   const socialLinks = [
     { icon: <Github size={24} />, href: "https://github.com/idincodingweb" }, // Ganti dengan link Anda
     { icon: <Linkedin size={24} />, href: "#" }, // Ganti dengan link Anda
@@ -81,7 +81,7 @@ const teamMembers = [
     <div className="about-min-vh-100 about-text-white">
       <div className="about-container about-py-5 px-3"> {/* Mengganti container-fluid menjadi container biasa */}
         
-        {/* Hero Section (Sama seperti sebelumnya, hanya mengganti button ke a) */}
+        {/* Hero Section */}
         <div className="about-row about-align-items-center about-mb-5">
           <div className="about-col-md-4 about-text-center">
             <div className="about-position-relative about-mb-5">
@@ -113,7 +113,7 @@ const teamMembers = [
                 <a 
                   key={index}
                   href={link.href}
-                  target="_blank" // Buka di tab baru
+                  target="_blank"
                   rel="noopener noreferrer" // Keamanan
                   className="about-btn about-btn-dark about-rounded-circle about-p-2 about-d-flex about-align-items-center about-hover-danger"
                   >
@@ -124,7 +124,7 @@ const teamMembers = [
           </div>
         </div>
 
-        {/* Tabs Section (Mengganti 'experience' ke 'projects') */}
+        {/* Tabs Section */}
         <div className="about-bg-black about-rounded about-p-4 about-mb-5">
           <div className="about-d-flex about-gap-3 about-mb-4 about-overflow-auto">
             {['skills', 'projects', 'education'].map((tab) => ( // Diubah
@@ -151,7 +151,7 @@ const teamMembers = [
               </div>
             )}
 
-            {activeTab === 'projects' && ( // Diubah dari 'experience'
+            {activeTab === 'projects' && ( 
               <div className="about-d-flex about-flex-column about-gap-4">
                 {profile.projects.map((project, index) => (
                   <div key={index} className="about-border-start about-border-4 about-border-danger about-ps-4">
@@ -198,7 +198,7 @@ const teamMembers = [
         </div>
 
         {/* --- BAGIAN BARU: MEET THE TEAM --- */}
-        {/* Bagian ini me-render array 'teamMembers' Anda */}
+        {/* Bagian ini me-render array 'teamMembers' */}
         <div className="about-mb-5">
           <h2 className="about-fw-bold about-mb-4 about-text-center">
             <span className="about-text-danger">Meet</span> the (Fictional) Team
