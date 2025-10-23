@@ -12,8 +12,8 @@ const About = () => {
   // Developer : IDIN ISKANDAR
   // (27 tahun, developer, content creator, dan proyek UNPAS)
   const profile = {
-    name: "Idin Iskandar, S.kom",
-    role: "Web Development",
+    name: "Idin Iskandar, S.kom (UNPAS) ",
+    role: "Web Development | FullStack",
     bio: "Passionate 27-year-old developer from Indonesia. Loves building cool web apps with React and creating content for YouTube. This iMovies project is my latest creation!",
     skills: ["React", "JavaScript", "Firebase", "Node.js", "PHP", "TMDB API", "CSS", "Bootstrap"],
     projects: [ 
