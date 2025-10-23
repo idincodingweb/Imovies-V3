@@ -1,7 +1,7 @@
 import { useState } from 'react';
 // Menambahkan ikon baru untuk bagian baru
 import { Github, Linkedin, Mail, Twitter, Users, Code, Tv } from 'lucide-react';
-import Images from 'https://raw.githubusercontent.com/idincodingweb/Imovies-V3/refs/heads/main/src/assets/images/IMG_20251023_170628.jpg';
+import Images from '../assets/images/IMG_20251023_170628.jpg';
 import '../assets/style/About.css';
 
 const About = () => {
